@@ -4,11 +4,11 @@ from dataclasses import dataclass
 # SummonerDTO - represents a summoner
 class SummonerDTO:
   # Encrypted account ID. Max length 56 characters.
-  accountId: str
+  account_id: str
   # ID of the summoner icon associated with the summoner.
-  profileIconId: int
+  profile_icon_id: int
   # Date summoner was last modified specified as epoch milliseconds. The following events will update this timestamp: profile icon change, playing the tutorial or advanced tutorial, finishing a game, summoner name change
-  revisionDate: int
+  revision_date: int
   # Summoner name.
   name: str
   # Encrypted summoner ID. Max length 63 characters.
@@ -16,4 +16,4 @@ class SummonerDTO:
   # Encrypted PUUID. Exact length of 78 characters.
   puuid: str
   # Summoner level associated with the summoner.
-  summonerLevel: int
+  summoner_level: int
