@@ -1,4 +1,4 @@
-# Yasuo
+# Yasuo (development phase)
 
 League of legends api wrapper
 
