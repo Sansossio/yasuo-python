@@ -17,3 +17,15 @@ class SummonerDTO:
   puuid: str
   # Summoner level associated with the summoner.
   summoner_level: int
+
+  @staticmethod
+  def create (data):
+    return SummonerDTO(
+      account_id=data["accountId"],
+      profile_icon_id=data["profileIconId"],
+      revision_date=data["revisionDate"],
+      name=data["name"],
+      id=data["id"],
+      puuid=data["puuid"],
+      summoner_level=data["summonerLevel"]
+    )
