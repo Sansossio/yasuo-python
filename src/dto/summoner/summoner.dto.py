@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+
+@dataclass(init=True)
 # SummonerDTO - represents a summoner
 class SummonerDTO:
   # Encrypted account ID. Max length 56 characters.
