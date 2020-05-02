@@ -19,3 +19,8 @@ python run_examples.py
 ```sh
 python run_examples.py <examplename1> <examplename2>...
 ```
+
+To get example list:
+```sh
+python get_example_list.py
+```
