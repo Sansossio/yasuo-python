@@ -10,6 +10,13 @@
       "request": "launch",
       "program": "${file}",
       "console": "internalConsole"
+    },
+    {
+      "name": "Python: Test file",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/test.py",
+      "console": "internalConsole"
     }
   ]
 }
