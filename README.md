@@ -38,6 +38,7 @@ Everything should be in the same order as in the official docs.
 - [ ] `Get a champion mastery by player ID and champion ID.`
 - [ ] `Get a player's total champion mastery score, which is the sum of individual champion mastery levels.`
 ## CHAMPION-V3
+- [x] `Get champions free rotation.`
 - [ ] `Retrieve all champions.`
 - [ ] `Retrieve champion by ID.`
 ## LEAGUE-V4
