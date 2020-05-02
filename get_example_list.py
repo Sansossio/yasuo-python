@@ -9,4 +9,6 @@ def get_example_list():
   return example_list
 
 if __name__ == '__main__':
-  print(get_example_list())
+  example_list = [""] + get_example_list()
+  message = "Available examples:" + "\n\t-> ".join(example_list)
+  print(message)
