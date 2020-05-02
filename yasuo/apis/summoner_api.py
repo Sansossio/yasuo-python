@@ -1,6 +1,7 @@
-# Summoner api
-class SummonerApi:
-  __apikey: str
+from yasuo.apis.base_api import BaseApi
+from yasuo.enum.regions import Regions
 
-  def __init__(self, apikey: str):
-    self.__apikey = apikey
+# Summoner api
+class SummonerApi(BaseApi):
+  def getByName (self, summoner_name: str, region: Regions):
+    return region
