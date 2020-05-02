@@ -1,1 +1,1 @@
-from .summoner_api import BaseApi
+from .summoner_api import SummonerApi
