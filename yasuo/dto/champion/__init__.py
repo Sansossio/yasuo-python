@@ -1,1 +1,1 @@
-from .champion_info_dto import ChampionInfoDTO
+from .champion_free_rotation_dto import ChampionFreeRotationDTO

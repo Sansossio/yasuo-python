@@ -1,6 +1,6 @@
 from yasuo.apis.base_api import BaseApi
 from yasuo.enum.regions import Regions
-from yasuo.dto.champion import ChampionInfoDTO
+from yasuo.dto.champion import ChampionFreeRotationDTO
 
 class ChampionApi(BaseApi):
   "Champion api"
@@ -12,4 +12,4 @@ class ChampionApi(BaseApi):
       path=self.__base_path,
       region=region
     )
-    return ChampionInfoDTO.create(response)
+    return ChampionFreeRotationDTO.create(response)
