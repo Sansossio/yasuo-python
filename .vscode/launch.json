@@ -17,6 +17,14 @@
       "request": "launch",
       "program": "${workspaceFolder}/test.py",
       "console": "internalConsole"
+    },
+    {
+      "name": "Python: Run examples",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_examples.py",
+      "console": "internalConsole",
+      "args": []
     }
   ]
 }
