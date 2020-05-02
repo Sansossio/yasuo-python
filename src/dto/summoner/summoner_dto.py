@@ -19,6 +19,7 @@ class SummonerDTO:
   summoner_level: int
 
   @staticmethod
+  # Create SummonerDTO instance
   def create (data):
     return SummonerDTO(
       account_id=data["accountId"],
