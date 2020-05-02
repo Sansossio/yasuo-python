@@ -13,3 +13,12 @@ class SummonerApi(BaseApi):
       region=region
     )
     return SummonerDTO.create(response)
+
+  # Get summoner by id
+  def by_id (self, id: str, region: Regions):
+    path = self.__base_path + "/" + id
+    response = self.request(
+      path=path,
+      region=region
+    )
+    return SummonerDTO.create(response)
