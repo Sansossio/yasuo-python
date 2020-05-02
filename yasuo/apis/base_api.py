@@ -1,8 +1,8 @@
 import requests
-import yasuo.config.config as config
-from yasuo.errors.apikey_not_found import ApikeyNotFound
-from yasuo.enum.regions import Regions
-from yasuo.apis.utils.error_handler import api_error_handler
+import yasuo.config as config
+from yasuo.errors import ApikeyNotFound
+from yasuo.enum import Regions
+from yasuo.apis.utils import api_error_handler
 
 # Base api
 class BaseApi:
