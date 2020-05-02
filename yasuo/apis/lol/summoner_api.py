@@ -1,6 +1,6 @@
 from yasuo.apis.base_api import BaseApi
 from yasuo.enum.regions import Regions
-from yasuo.dto.summoner.summoner_dto import SummonerDTO
+from yasuo.dto.summoner import SummonerDTO
 
 class SummonerApi(BaseApi):
   "Summoner api"
