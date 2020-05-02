@@ -32,3 +32,12 @@ class SummonerApi(BaseApi):
       region=region
     )
     return SummonerDTO.create(response)
+
+  def by_account (self, account: str, region: Regions):
+    "Get summoner by puuid"
+    path = self.__base_path + "/by-account/" + account
+    response = self.request(
+      path=path,
+      region=region
+    )
+    return SummonerDTO.create(response)

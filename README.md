@@ -63,7 +63,7 @@ Everything should be in the same order as in the official docs.
 - [x] `Get a summoner by account ID.`
 - [x] `Get a summoner by summoner name.`
 - [x] `Get a summoner by PUUID.`
-- [ ] `Get a summoner by summoner ID.`
+- [x] `Get a summoner by summoner ID.`
 ## TOURNAMENT-STUB-V4
 - [ ] `Create a mock tournament code for the given tournament.`
 - [ ] `Gets a mock list of lobby events by tournament code.`
