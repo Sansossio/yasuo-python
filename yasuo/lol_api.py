@@ -2,11 +2,12 @@ from yasuo.apis.lol import SummonerApi
 
 # League of legends api
 class LolApi:
+  """
+    League of legends api methods
+  """
   summoner: SummonerApi
   __apikey: str
-  """
-    Apikey = Riot apikey
-  """
+
   def __init__(self, apikey: str):
     self.__apikey = apikey
     self.__initApis()
