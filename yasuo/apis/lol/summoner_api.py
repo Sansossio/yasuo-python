@@ -6,7 +6,7 @@ from yasuo.dto.summoner.summoner_dto import SummonerDTO
 class SummonerApi(BaseApi):
   __base_path = "summoner/v4/summoners"
   # Get summoner by name
-  def by_name (self, summoner_name: str, region: Regions) -> SummonerDTO:
+  def by_name (self, summoner_name: str, region: Regions):
     path = self.__base_path + "/by-name/" + summoner_name
     response = self.request(
       path=path,
