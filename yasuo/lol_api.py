@@ -1,4 +1,4 @@
-from yasuo.apis.lol.summoner_api import SummonerApi
+from yasuo.apis.lol import SummonerApi
 
 # League of legends api
 class LolApi:
