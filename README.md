@@ -8,7 +8,7 @@ RIOT_API_KEY = Riot api key
 
 ## Run examples
 
-You need to set an environment variable "RIOT_API_KEY" (or create .env with this key) and then: <br><br>
+You need to set an environment variable "RIOT_API_KEY" (or create .env with this key)
 
 ### Run all examples
 ```sh
