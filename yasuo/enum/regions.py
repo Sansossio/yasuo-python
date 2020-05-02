@@ -1,6 +1,7 @@
 from enum import Enum
 
 class Regions(Enum):
+  "League of legends region"
   BRAZIL = "BR1"
   EU_EAST = "EUN1"
   EU_WEST = "EUW1"
