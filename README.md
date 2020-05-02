@@ -5,3 +5,17 @@ League of legends api wrapper
 ## Environment variables
 
 RIOT_API_KEY = Riot api key
+
+## Run examples
+
+You need to set an environment variable "RIOT_API_KEY" (or create .env with this key) and then: <br><br>
+
+### Run all examples
+```sh
+python run_examples.py
+```
+
+### Specific example(s)
+```sh
+python run_examples.py <examplename1> <examplename2>...
+```
