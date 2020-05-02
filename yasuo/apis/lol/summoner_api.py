@@ -2,11 +2,12 @@ from yasuo.apis.base_api import BaseApi
 from yasuo.enum.regions import Regions
 from yasuo.dto.summoner.summoner_dto import SummonerDTO
 
-# Summoner api
 class SummonerApi(BaseApi):
+  "Summoner api"
   __base_path = "summoner/v4/summoners"
-  # Get summoner by name
+
   def by_name (self, summoner_name: str, region: Regions):
+    "Get summoner by name"
     path = self.__base_path + "/by-name/" + summoner_name
     response = self.request(
       path=path,
@@ -14,8 +15,8 @@ class SummonerApi(BaseApi):
     )
     return SummonerDTO.create(response)
 
-  # Get summoner by id
   def by_id (self, id: str, region: Regions):
+    "Get summoner by id"
     path = self.__base_path + "/" + id
     response = self.request(
       path=path,

@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
 @dataclass(init=True)
-# SummonerDTO - represents a summoner
 class SummonerDTO:
+  "SummonerDTO - represents a summoner"
   # Encrypted account ID. Max length 56 characters.
   account_id: str
   # ID of the summoner icon associated with the summoner.
@@ -19,8 +19,8 @@ class SummonerDTO:
   summoner_level: int
 
   @staticmethod
-  # Create SummonerDTO instance
   def create (data):
+    "Create SummonerDTO instance"
     return SummonerDTO(
       account_id=data["accountId"],
       profile_icon_id=data["profileIconId"],
