@@ -7,6 +7,7 @@ from yasuo.apis.utils import api_error_handler
 # Base api
 class BaseApi:
   __apikey: str
+  requestService = requests
 
   def __init__(self, apikey: str):
     if not apikey:
@@ -19,7 +20,7 @@ class BaseApi:
     return url
 
   def request(self, region: Regions, path: str):
-    response = requests.get(
+    response = self.requestService.get(
       url=self.__parseUrl(region, path),
       headers={
         "X-Riot-Token": self.__apikey
