@@ -24,7 +24,7 @@
       "request": "launch",
       "program": "${workspaceFolder}/run_examples.py",
       "console": "internalConsole",
-      "args": []
+      "args": ["champion_mastery_by_summoner"]
     }
   ]
 }

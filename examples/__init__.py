@@ -4,3 +4,4 @@ from .summoner_by_puuid import summoner_by_puuid
 from .summoner_by_account import summoner_by_account
 from .champion_free_rotation import champion_free_rotation
 from .champion_details import champion_details
+from .champion_mastery_by_summoner import champion_mastery_by_summoner
