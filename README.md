@@ -39,8 +39,8 @@ Everything should be in the same order as in the official docs.
 - [ ] `Get a player's total champion mastery score, which is the sum of individual champion mastery levels.`
 ## CHAMPION-V3
 - [x] `Get champions free rotation.`
-- [ ] `Retrieve all champions.`
-- [ ] `Retrieve champion by ID.`
+- [x] `Retrieve all champions.`
+- [x] `Retrieve champion by NAME.`
 ## LEAGUE-V4
 - [ ] `Get the challenger league for given queue.`
 - [ ] `Get league entries in all queues for a given summoner ID.`
