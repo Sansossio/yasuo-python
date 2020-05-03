@@ -20,11 +20,13 @@ class ChampionApi(BaseApi):
     return ChampionFreeRotationDTO.create(response)
 
   def champion_details(self, name: str, lang: str = "en_US"):
+    "Get champion details"
     url = self.__champions_url + lang + "/champion/" + name + ".json"
     champion = self.requestService.get(url).json()
     return ChampionDTO.create(champion)
 
   def champion_listing(self, lang = "en_US"):
+    "Get all champions details (this could be slow)"
     url = self.__champions_url + lang + "/champion.json"
     data = self.requestService.get(url).json()
     championNames = list(map(self.__get_champion_id, list(data["data"].values())))
