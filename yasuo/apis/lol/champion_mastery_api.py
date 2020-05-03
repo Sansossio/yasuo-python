@@ -16,12 +16,20 @@ class ChampionMasteryApi(BaseApi):
     )
     return ChampionMasteryDTO.create(response)
 
-  def by_summoner (self, summoner_id: str, region: Regions) -> List[ChampionMasteryDTO]:
+  def summoner_score(self, summoner_id: str, region: Regions):
+    path = "champion-mastery/v4/scores/by-summoner/" + summoner_id
+    data: int = self.request(
+      path=path,
+      region=region
+    )
+    return data
+
+  def by_summoner (self, summoner_id: str, region: Regions):
     "Get summoner champions masteries"
     path = self.__base_path + "/" + summoner_id
     data = self.request(
       path=path,
       region=region
     )
-    response = map(ChampionMasteryDTO.create, data)
-    return list(response)
+    response: List[ChampionMasteryDTO] = list(map(ChampionMasteryDTO.create, data))
+    return response
