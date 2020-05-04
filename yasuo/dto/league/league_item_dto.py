@@ -14,11 +14,11 @@ class LeagueItemDTO:
   league_points: int
   losses: int
   summoner_id: str
-  mini_series: MiniSeriesDTO
+  mini_series: MiniSeriesDTO = None
 
   @staticmethod
   def create(data):
-    mini_series = MiniSeriesDTO.create(data["miniSeries"]) if "miniSeries" in data else []
+    mini_series = MiniSeriesDTO.create(data["miniSeries"]) if "miniSeries" in data else None
     return LeagueItemDTO(
       fresh_blood=data["freshBlood"],
       wins=data["wins"],
