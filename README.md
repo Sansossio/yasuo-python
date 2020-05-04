@@ -42,7 +42,7 @@ Everything should be in the same order as in the official docs.
 - [x] `Retrieve all champions.`
 - [x] `Retrieve champion by NAME.`
 ## LEAGUE-V4
-- [ ] `Get the challenger league for given queue.`
+- [x] `Get the challenger league for given queue.`
 - [ ] `Get league entries in all queues for a given summoner ID.`
 - [ ] `Get all the league entries.`
 - [ ] `Get the grandmaster league of a specific queue.`

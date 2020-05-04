@@ -1,4 +1,4 @@
-from .apis.lol import SummonerApi, ChampionApi, ChampionMasteryApi
+from .apis.lol import *
 
 # League of legends api
 class LolApi:
@@ -9,6 +9,7 @@ class LolApi:
   summoner: SummonerApi
   champion: ChampionApi
   champion_mastery: ChampionMasteryApi
+  league: LeagueApi
 
   # Internal properties
   __apikey: str
@@ -21,3 +22,4 @@ class LolApi:
     self.summoner = SummonerApi(self.__apikey)
     self.champion = ChampionApi(self.__apikey)
     self.champion_mastery = ChampionMasteryApi(self.__apikey)
+    self.league = LeagueApi(self.__apikey)
