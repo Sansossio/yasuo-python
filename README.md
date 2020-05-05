@@ -45,6 +45,12 @@ Everything should be in the same order as in the official docs.
 - [x] `Get all champion mastery entries sorted by number of champion points descending.`
 - [x] `Get a champion mastery by player ID and champion ID.`
 - [x] `Get a player's total champion mastery score, which is the sum of individual champion mastery levels.`
+## MATCH-V4
+- [ ] `Get matches id by tournament code`
+- [ ] `Get match by id`
+- [ ] `Get match by tournament code`
+- [ ] `Get matches by summoner id`
+- [ ] `Get match timeline by id`
 ## CHAMPION-V3
 - [x] `Get champions free rotation.`
 - [x] `Retrieve all champions.`
