@@ -8,20 +8,20 @@ class LeagueApi(BaseApi):
   __base_path = "league/v4"
 
   def challenger_leagues_by_queue(self, queue: Queues, region: Regions):
-    "Get challenger leagues by queue"
+    "Get the challenger league for given queue."
     path = self.__base_path + "/challengerleagues/by-queue/" + queue.value
     data = self.request(region, path)
     return LeagueListDTO.create(data)
 
   def leagues_by_summoner_id(self, summoner_id: str, region: Regions):
-    "Get summoner's leagues"
+    "Get league entries in all queues for a given summoner ID."
     path = self.__base_path + "/entries/by-summoner/" + summoner_id
     data = self.request(region, path)
     response: List[LeagueEntryDTO] = list(map(LeagueEntryDTO.create, data))
     return response
 
   def get_entries(self, queue: Queues, tier: Tiers, division: Divisions, region: Regions, page: int = 1):
-    "Get entries by queue, tiers and divisions"
+    "Get league entries filtering by queue, tier and divison"
     path = self.__base_path + "/entries/" + queue.value + "/" + tier.value + "/" + division.value
     params = {
       "page": page

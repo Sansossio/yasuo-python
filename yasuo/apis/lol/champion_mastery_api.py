@@ -8,7 +8,7 @@ class ChampionMasteryApi(BaseApi):
   __base_path = "champion-mastery/v4/champion-masteries/by-summoner"
 
   def champion_by_summoner(self, summoner_id: str, champion: Champions, region: Regions):
-    "Get champion mastery by summoner"
+    "Get all champion mastery entries sorted by number of champion points descending."
     path = self.__base_path + "/" + summoner_id + "/by-champion/" + str(champion.value)
     response = self.request(
       path=path,
@@ -17,6 +17,7 @@ class ChampionMasteryApi(BaseApi):
     return ChampionMasteryDTO.create(response)
 
   def summoner_score(self, summoner_id: str, region: Regions):
+    "Get a player's total champion mastery score, which is the sum of individual champion mastery levels."
     path = "champion-mastery/v4/scores/by-summoner/" + summoner_id
     data: int = self.request(
       path=path,
@@ -25,7 +26,7 @@ class ChampionMasteryApi(BaseApi):
     return data
 
   def by_summoner (self, summoner_id: str, region: Regions):
-    "Get summoner champions masteries"
+    "Get a champion mastery by player ID and champion ID."
     path = self.__base_path + "/" + summoner_id
     data = self.request(
       path=path,

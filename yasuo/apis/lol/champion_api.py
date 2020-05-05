@@ -12,7 +12,7 @@ class ChampionApi(BaseApi):
     return data["id"]
 
   def free_champs(self, region: Regions):
-    "Get free champs"
+    "Get champions free rotation."
     response = self.request(
       path=self.__base_path,
       region=region
@@ -20,13 +20,13 @@ class ChampionApi(BaseApi):
     return ChampionFreeRotationDTO.create(response)
 
   def champion_details(self, name: str, lang: str = "en_US"):
-    "Get champion details"
+    "Retrieve champion by NAME."
     url = self.__champions_url + lang + "/champion/" + name + ".json"
     champion = self.requestService.get(url).json()
     return ChampionDTO.create(champion)
 
   def champion_listing(self, lang = "en_US"):
-    "Get all champions details (this could be slow)"
+    "Retrieve all champions."
     url = self.__champions_url + lang + "/champion.json"
     data = self.requestService.get(url).json()
     championNames = list(map(self.__get_champion_id, list(data["data"].values())))
