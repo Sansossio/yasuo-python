@@ -31,6 +31,7 @@ from yasuo import LolApi
 from yasuo.enum import Regions
 
 def summoner_by_name(apikey: str, summoner_name: str, region: Regions):
+  apikey = "your apikey"
   lol_api = LolApi(apikey=apikey)
   return lol_api.summoner.by_name(summoner_name, region)
   # Responses: SummonerDTO()
