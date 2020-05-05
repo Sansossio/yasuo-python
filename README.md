@@ -44,7 +44,7 @@ Everything should be in the same order as in the official docs.
 ## LEAGUE-V4
 - [x] `Get the challenger league for given queue.`
 - [x] `Get league entries in all queues for a given summoner ID.`
-- [ ] `Get league entries filtering by queue, tier and divison`
+- [x] `Get league entries filtering by queue, tier and divison`
 - [ ] `Get the grandmaster league of a specific queue.`
 - [ ] `Get league with given ID, including inactive entries.`
 - [ ] `Get the master league for given queue.`
