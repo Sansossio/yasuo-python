@@ -44,13 +44,10 @@ Everything should be in the same order as in the official docs.
 ## LEAGUE-V4
 - [x] `Get the challenger league for given queue.`
 - [x] `Get league entries in all queues for a given summoner ID.`
-- [ ] `Get all the league entries.`
+- [ ] `Get league entries filtering by queue, tier and divison`
 - [ ] `Get the grandmaster league of a specific queue.`
 - [ ] `Get league with given ID, including inactive entries.`
 - [ ] `Get the master league for given queue.`
-- [ ] `Get the queues that have positional ranks enabled.` (deprecated June 17th and in `v0.9.10`)
-- [ ] `Get league positions in all queues for a given summoner ID.` (deprecated June 17th and in `v0.9.10`)
-- [ ] `Get all the positional league entries.` (deprecated June 17th and in `v0.9.10`)
 ## LOL-STATUS-V3
 - [ ] `Get League of Legends status for the given shard.`
 - [ ] `Get matchlist for games played on given account ID and platform ID and filtered using given filter parameters, if any.`
