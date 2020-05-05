@@ -7,6 +7,7 @@ League of legends api wrapper
 RIOT_API_KEY = Riot api key
 
 ## Simple example
+
 ```python
 from yasuo import LolApi
 from yasuo.enum import Regions
