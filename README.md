@@ -58,10 +58,6 @@ Everything should be in the same order as in the official docs.
 - [x] `Get the master league for given queue.`
 ## LOL-STATUS-V3
 - [ ] `Get League of Legends status for the given shard.`
-- [ ] `Get matchlist for games played on given account ID and platform ID and filtered using given filter parameters, if any.`
-- [ ] `Get match timeline by match ID.`
-- [ ] `Get match IDs by tournament code.`
-- [ ] `Get match by match ID and tournament code.`
 ## SPECTATOR-V4
 - [ ] `Get current game information for the given summoner ID.`
 - [ ] `Get list of featured games.`
