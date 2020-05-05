@@ -10,6 +10,7 @@ class LolApi:
   champion: ChampionApi
   champion_mastery: ChampionMasteryApi
   league: LeagueApi
+  status: StatusApi
 
   # Internal properties
   __apikey: str
@@ -23,3 +24,4 @@ class LolApi:
     self.champion = ChampionApi(self.__apikey)
     self.champion_mastery = ChampionMasteryApi(self.__apikey)
     self.league = LeagueApi(self.__apikey)
+    self.status = StatusApi(self.__apikey)
