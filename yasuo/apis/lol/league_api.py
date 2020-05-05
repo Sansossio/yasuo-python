@@ -42,3 +42,9 @@ class LeagueApi(BaseApi):
     data = self.request(region, path)
     return LeagueListDTO.create(data)
 
+  def master_leagues_by_queue(self, queue: Queues, region: Regions):
+    "Get the master league for given queue."
+    path = self.__base_path + "/masterleagues/by-queue/" + queue.value
+    data = self.request(region, path)
+    return LeagueListDTO.create(data)
+

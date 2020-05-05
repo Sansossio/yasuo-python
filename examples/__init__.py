@@ -12,3 +12,4 @@ from .summoner_league_by_id import summoner_league_by_id
 from .league_entries import league_entries
 from .grandmaster_league_by_queue import grandmaster_league_by_queue
 from .league_by_league_id import league_by_league_id
+from .master_league_by_queue import master_league_by_queue
