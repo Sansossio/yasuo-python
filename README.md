@@ -57,7 +57,7 @@ Everything should be in the same order as in the official docs.
 - [x] `Get league with given ID, including inactive entries.`
 - [x] `Get the master league for given queue.`
 ## LOL-STATUS-V3
-- [ ] `Get League of Legends status for the given shard.`
+- [x] `Get League of Legends status for the given shard.`
 ## SPECTATOR-V4
 - [ ] `Get current game information for the given summoner ID.`
 - [ ] `Get list of featured games.`
