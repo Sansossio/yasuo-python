@@ -20,3 +20,5 @@ for method_name in get_example_list():
   method_time = time.time() - init_time
   message = "Method \"{}\" \nresponse: {} \ntime: {:0.2f} seconds".format(method_name, method_response, method_time)
   print(message + "\n\n")
+
+os._exit(0)
