@@ -25,14 +25,20 @@ To get example list:
 python get_example_list.py
 ```
 
+# Examples
+```python
+from yasuo import LolApi
+from yasuo.enum import Regions
+
+def summoner_by_name(apikey: str, summoner_name: str, region: Regions):
+  lol_api = LolApi(apikey=apikey)
+  return lol_api.summoner.by_name(summoner_name, region)
+  # Responses: SummonerDTO()
+```
+[More examples](./example)
+
 # Endpoints 
 Everything should be in the same order as in the official docs.
-## CLASH
-- [ ] `Get players by summoner id`
-- [ ] `Get team`
-- [ ] `Get tournaments`
-- [ ] `Get tournaments by team id`
-- [ ] `Get tournament by id`
 ## CHAMPION-MASTERY-V4
 - [x] `Get all champion mastery entries sorted by number of champion points descending.`
 - [x] `Get a champion mastery by player ID and champion ID.`
@@ -90,3 +96,9 @@ Everything should be in the same order as in the official docs.
 - [ ] `Get all the league entries.`
 - [ ] `Get league with given ID, including inactive entries.`
 - [ ] `Get the master league for given queue.`
+## CLASH
+- [ ] `Get players by summoner id`
+- [ ] `Get team`
+- [ ] `Get tournaments`
+- [ ] `Get tournaments by team id`
+- [ ] `Get tournament by id`
