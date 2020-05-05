@@ -9,3 +9,4 @@ from .champion_mastery_by_summoner_champion import champion_mastery_by_summoner_
 from .champion_mastery_summoner_score import champion_mastery_summoner_score
 from .challenger_league_by_queue import challenger_league_by_queue
 from .summoner_league_by_id import summoner_league_by_id
+from .league_entries import league_entries
