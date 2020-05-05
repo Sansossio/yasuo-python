@@ -35,7 +35,7 @@ def summoner_by_name(apikey: str, summoner_name: str, region: Regions):
   return lol_api.summoner.by_name(summoner_name, region)
   # Responses: SummonerDTO()
 ```
-[More examples](./example)
+[More examples](https://github.com/Sansossio/yasuo/tree/master/examples)
 
 # Endpoints 
 Everything should be in the same order as in the official docs.
