@@ -35,3 +35,10 @@ class LeagueApi(BaseApi):
     path = self.__base_path + "/grandmasterleagues/by-queue/" + queue.value
     data = self.request(region, path)
     return LeagueListDTO.create(data)
+
+  def by_league_id(self, league_id: str, region: Regions):
+    "Get league with given ID, including inactive entries."
+    path = self.__base_path + "/leagues/" + league_id
+    data = self.request(region, path)
+    return LeagueListDTO.create(data)
+

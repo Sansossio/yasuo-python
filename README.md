@@ -46,7 +46,7 @@ Everything should be in the same order as in the official docs.
 - [x] `Get league entries in all queues for a given summoner ID.`
 - [x] `Get league entries filtering by queue, tier and divison`
 - [x] `Get the grandmaster league of a specific queue.`
-- [ ] `Get league with given ID, including inactive entries.`
+- [x] `Get league with given ID, including inactive entries.`
 - [ ] `Get the master league for given queue.`
 ## LOL-STATUS-V3
 - [ ] `Get League of Legends status for the given shard.`
