@@ -1,6 +1,6 @@
 from typing import List
 from yasuo.apis.base_api import BaseApi
-from yasuo.enum import Regions, Queues
+from yasuo.enum import Regions, Queues, Tiers, Divisions
 from yasuo.dto.league import LeagueListDTO, LeagueItemDTO, LeagueEntryDTO
 
 class LeagueApi(BaseApi):
@@ -20,3 +20,12 @@ class LeagueApi(BaseApi):
     response: List[LeagueEntryDTO] = list(map(LeagueEntryDTO.create, data))
     return response
 
+  def get_entries(self, queue: Queues, tier: Tiers, division: Divisions, region: Regions, page: int = 1):
+    "Get entries by queue, tiers and divisions"
+    path = self.__base_path + "/entries/" + queue.value + "/" + tier.value + "/" + division.value
+    params = {
+      "page": page
+    }
+    data = self.request(region, path, params)
+    response: List[LeagueEntryDTO] = list(map(LeagueEntryDTO.create, data))
+    return response
