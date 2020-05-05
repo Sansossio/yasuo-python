@@ -6,6 +6,19 @@ League of legends api wrapper
 
 RIOT_API_KEY = Riot api key
 
+## Simple example
+```python
+from yasuo import LolApi
+from yasuo.enum import Regions
+
+def summoner_by_name(apikey: str, summoner_name: str, region: Regions):
+  apikey = "your apikey"
+  lol_api = LolApi(apikey=apikey)
+  return lol_api.summoner.by_name(summoner_name, region)
+  # Responses: SummonerDTO()
+```
+[More examples](https://github.com/Sansossio/yasuo/tree/master/examples)
+
 ## Run examples
 
 You need to set an environment variable "RIOT_API_KEY" (or create .env with this key)
@@ -24,19 +37,6 @@ To get example list:
 ```sh
 python get_example_list.py
 ```
-
-# Examples
-```python
-from yasuo import LolApi
-from yasuo.enum import Regions
-
-def summoner_by_name(apikey: str, summoner_name: str, region: Regions):
-  apikey = "your apikey"
-  lol_api = LolApi(apikey=apikey)
-  return lol_api.summoner.by_name(summoner_name, region)
-  # Responses: SummonerDTO()
-```
-[More examples](https://github.com/Sansossio/yasuo/tree/master/examples)
 
 # Endpoints 
 Everything should be in the same order as in the official docs.
