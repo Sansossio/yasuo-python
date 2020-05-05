@@ -19,10 +19,11 @@ class BaseApi:
     url += "/" + path
     return url
 
-  def request(self, region: Regions, path: str):
+  def request(self, region: Regions, path: str, params = {}):
     url = self.__parseUrl(region, path)
     response = self.requestService.get(
       url=url,
+      params=params,
       headers={
         "X-Riot-Token": self.__apikey
       }
