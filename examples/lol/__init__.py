@@ -14,3 +14,4 @@ from .grandmaster_league_by_queue import grandmaster_league_by_queue
 from .league_by_league_id import league_by_league_id
 from .master_league_by_queue import master_league_by_queue
 from .shard_status import shard_status
+from .league_exp_entries import league_exp_entries
