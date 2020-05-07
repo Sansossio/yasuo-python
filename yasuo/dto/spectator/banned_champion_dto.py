@@ -13,7 +13,7 @@ class BannedChampionDTO:
   @staticmethod
   def create(data):
     return BannedChampionDTO(
-      pick_turn=data["pick_turn"],
-      champion_id=data["champion_id"],
-      team_id=data["team_id"]
+      pick_turn=data["pickTurn"],
+      champion_id=data["championId"],
+      team_id=data["teamId"]
     )
