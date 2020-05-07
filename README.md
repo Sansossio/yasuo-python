@@ -67,8 +67,8 @@ Everything should be in the same order as in the official docs.
 ## LOL-STATUS-V3
 - [x] `Get League of Legends status for the given shard.`
 ## SPECTATOR-V4
-- [x] `Get current game information for the given summoner ID.`
-- [ ] `Get list of featured games.`
+- [ ] `Get current game information for the given summoner ID.`
+- [x] `Get list of featured games.`
 ## SUMMONER-V4
 - [x] `Get a summoner by account ID.`
 - [x] `Get a summoner by summoner name.`
