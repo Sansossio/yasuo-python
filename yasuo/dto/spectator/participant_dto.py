@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 @dataclass(init=True)
 class ParticipantDTO:
-  "Participant details"
+  "Participant details DTO"
   # Flag indicating whether or not this participant is a bot
   bot: bool
   # The ID of the second summoner spell used by this participant
