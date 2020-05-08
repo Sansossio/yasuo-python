@@ -6,7 +6,7 @@ from .participant_dto import ParticipantDTO
 
 @dataclass(init=True)
 class FeaturedGameInfoDTO:
-  "Game information"
+  "Game information DTO"
   # The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL, ASCENSION, FIRSTBLOOD, KINGPORO)
   game_mode: str
   # The amount of time in seconds that has passed since the game started
