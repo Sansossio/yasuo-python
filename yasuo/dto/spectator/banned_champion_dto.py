@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 @dataclass(init=True)
 class BannedChampionDTO:
-  "BannedChampion"
+  "BannedChampion DTO"
   # The turn during which the champion was banned
   pick_turn: int
   # The ID of the banned champion
