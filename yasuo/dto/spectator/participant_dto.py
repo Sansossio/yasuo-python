@@ -20,6 +20,7 @@ class ParticipantDTO:
 
   @staticmethod
   def create(data):
+    "Create ParticipantDTO instance"
     return ParticipantDTO(
       bot=data["bot"],
       spell2_id=data["spell2Id"],
