@@ -8,6 +8,7 @@ class ObserverDTO:
 
   @staticmethod
   def create(data):
+    "Create ObserverDTO instance"
     return ObserverDTO(
       encryption_key=data["encryptionKey"]
     )
