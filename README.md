@@ -49,7 +49,7 @@ Everything should be in the same order as in the official docs.
 - [ ] `Get matches id by tournament code`
 - [ ] `Get match by id`
 - [ ] `Get match by tournament code`
-- [ ] `Get matches by summoner id`
+- [x] `Get matches by summoner id`
 - [ ] `Get match timeline by id`
 ## CHAMPION-V3
 - [x] `Get champions free rotation.`
