@@ -13,6 +13,7 @@ class LolApi:
   league_exp: LeagueExpApi
   status: StatusApi
   spectator: SpectatorApi
+  match: MatchApi
 
   # Internal properties
   __apikey: str
@@ -29,3 +30,4 @@ class LolApi:
     self.status = StatusApi(self.__apikey)
     self.league_exp = LeagueExpApi(self.__apikey)
     self.spectator = SpectatorApi(self.__apikey)
+    self.match = MatchApi(self.__apikey)
