@@ -16,3 +16,4 @@ from .master_league_by_queue import master_league_by_queue
 from .shard_status import shard_status
 from .league_exp_entries import league_exp_entries
 from .featured_games import featured_games
+from .matchlist_by_summoner_id import matchlist_by_summoner_id
