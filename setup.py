@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Sansossio/yasuo",
     packages=setuptools.find_packages(),
-    keywords=["LoL", "League of Legends", "Riot Games", "API", "REST", "yasuo"],
+    keywords=["LoL", "League of Legends", "Riot Games", "API", "yasuo", "wrapper"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
