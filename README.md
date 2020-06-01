@@ -1,5 +1,5 @@
 # Yasuo (development phase)
-# DO NOT USE THIS YET
+<h1>DO NOT USE THIS YET</h1>
 
 League of legends api wrapper
 
